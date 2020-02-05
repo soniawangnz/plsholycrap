@@ -1,0 +1,229 @@
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: rgb(69, 14, 196);
+    background-color: rgb(171, 198, 247);
+    font-weight: lighter;
+}
+
+.name {
+    margin-left: 30px;
+    height: 30px;
+    width: 150px;
+}
+
+.class {
+    margin-right: 30px;
+    text-align: left;
+    transform: rotate(180deg);
+    margin-top: 600px;
+    z-index: 10;
+}
+
+.codetext {
+    margin-top: -40px;
+    visibility: hidden;
+}
+
+.teacup {
+    margin-top: -40px;
+    visibility: hidden;
+}
+
+.mountains {
+    margin-top: -40px;
+    visibility: hidden;
+}
+
+.responsee {
+    margin-top: -40px;
+    visibility: hidden;
+}
+
+h2:hover{
+    /* font-size: 60px; */
+    font-weight: bolder;
+}
+
+.hand {
+    width: 100px;
+    top: 280px;
+    position: absolute;
+    left: 47%;
+    animation: wave .8s linear 2 forwards;
+    transform-origin: bottom;
+    z-index: 30;
+}
+
+
+@keyframes wave {
+    0% {transform: rotate(0deg)}
+    25% {transform: rotate(15deg)}
+    50% {transform: rotate(0deg)}
+    75% {transform: rotate(-15deg)}
+    99.99% {transform: rotate(0deg)}
+   100% {visibility: hidden}
+}
+
+.backbox {
+    background-color:rgb(171, 198, 247);
+    width: 2000px;
+    height: 1000px;
+    bottom: 0px;
+    position: absolute;
+    z-index: 25;
+    animation: backboox 1s linear 2 forwards;
+}
+
+@keyframes backboox {
+    0% {visibility: visible;}
+   100% {visibility: hidden}
+}
+
+body{
+    background-color: rgb(171, 198, 247);
+    overflow: hidden;
+}
+
+.box4 {
+    position: absolute;
+    /* display: block; */
+    left: 50%;
+    margin-left: -50px;
+    top: 200px;
+
+    animation: boox4 1.5s linear infinite;
+}
+
+.box4:hover{
+    animation-play-state: paused;
+    background-color: rgb(255, 255, 255);
+    /* transform-origin: center;
+    transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg); */
+}
+
+@keyframes boox4 {
+    0% {top: 205px}
+    50% {top: 190px}
+    100% {top: 205px}
+}
+
+.box3 {
+    position: absolute;
+    /* display: block; */
+    left: 50%;
+    margin-left: -50px;
+    top: 250px;
+    animation: boox3 1.5s linear infinite;
+}
+
+.box3:hover{
+    animation-play-state: paused;
+    background-color: rgb(255, 255, 255);
+}
+
+@keyframes boox3 {
+    0% {top: 240.5px}
+    25% {top: 250px}
+    65% {top: 235px}
+    100% {top: 240px}
+}
+
+.boxwrapper{
+    width: 100vw;
+    position: relative;
+}
+.box2 {
+    /* display: block; */
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 300px;
+    animation: boox2 1.5s linear infinite;
+}
+
+.box2:hover{
+    animation-play-state: paused;
+    background-color: rgb(255, 255, 255);
+}
+
+@keyframes boox2 {
+    0% {top: 275px}
+    50% {top: 290px}
+    100% {top: 275px}
+}
+
+.box1 {
+    position: absolute;
+    /* display: block; */
+    left: 50%;
+    margin-left: -50px;
+    top: 350px;
+    animation: boox1 1.5s linear infinite;
+}
+  
+@keyframes boox1 {
+    0% {top: 325px}
+    25% {top: 315px}
+    65% {top: 335px}
+    100% {top: 325.2px}
+}
+
+.box1:hover{
+    animation-play-state: paused;
+    background-color: rgb(255, 255, 255);
+}
+
+.box {
+    transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+    width: 100px;
+    height: 100px;
+    margin-top: 60px;
+    background-color: rgb(171, 198, 247);
+    border: 5px solid rgb(69, 14, 196);
+    border-radius: 15px;
+    z-index: 20;
+}
+.whatisbox {
+font-family: 'Courier New', Courier, monospace;
+position: absolute;
+color: rgb(69, 14, 196);
+left: 48%;
+font-size: 110px;
+top: 145px;
+z-index: 40;
+visibility: hidden;
+pointer-events: none;
+}
+
+.coffee {
+    width: 100px;
+    pointer-events: none;
+    position: absolute;
+    left: 47.5%;
+    top: 294px;
+    z-index: 45;
+    visibility: hidden;
+}
+
+.mount {
+    width: 90px;
+    left: 47%;
+    position: absolute;
+    z-index: 50;
+    pointer-events: none;
+    top: 335px;
+    visibility: hidden;
+}
+
+.boob {
+    width: 80px;
+    z-index: 55;
+    position: absolute;
+    left: 47.5%;
+    top: 340px;
+    pointer-events: none;
+    visibility: hidden;
+}
+
